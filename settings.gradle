@@ -1,0 +1,7 @@
+rootProject.name = 'mars-rover'
+
+include 'mars-rover-lib'
+project(':mars-rover-lib').projectDir = file('lib')
+
+include 'mars-rover-app'
+project(':mars-rover-app').projectDir = file('app')
