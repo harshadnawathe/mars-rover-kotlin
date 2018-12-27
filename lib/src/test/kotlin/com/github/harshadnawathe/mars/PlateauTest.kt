@@ -11,7 +11,7 @@ class PlateauTest{
     }
 
     @Test
-    fun shouldReturnTrueIfCoordinatesAreNotWithinBounds() {
+    fun shouldReturnFalseIfCoordinatesAreNotWithinBounds() {
         val plateau = Plateau(Location(100, 100))
         assertEquals(false, plateau.isWithinBounds(Location(150,75)))
     }
